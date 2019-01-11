@@ -1,0 +1,547 @@
+
+html, body {
+  font-family: 'Ubuntu', sans-serif;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  min-height: 100%;
+  min-width: 100%;
+}
+
+.col {
+  width: 100%;
+}
+
+.row {
+  width: 100%;
+}
+
+/** {
+  border: 1px solid red;
+}*/
+
+a:focus {
+  outline: none;
+}
+
+/* Logo */
+
+#logo {
+  color: white;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-style: italic;
+  font-size: 36px;
+}
+
+#logo span {
+  color: red;
+}
+
+/*Navbar*/
+
+.navbar {
+  border-radius: 0px;
+  width: 100%;
+  background-color: black;
+}
+
+.about-statement {
+  font-style: italic;
+  margin-top: 130px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.feedback {
+  pointer-events: none;
+}
+
+.main-content {
+  padding-bottom: 200px;
+}
+
+.circles {
+
+}
+
+/*Left Circle*/
+
+.left-outer {
+  /*border: 1px solid black;*/
+  display: inline-block;
+}
+
+.left-circle1 {
+  /*position: absolute;*/
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  -moz-border-radius: 75px;
+  -webkit-border-radius: 75px;
+  border-radius: 75px;
+  transition: all 2s;
+  text-align: center;
+  line-height: 150px;
+  font-size: 25px;
+}
+
+.left-circle2 {
+  position: absolute;
+  /*width: 350px;
+  height: 350px;*/
+  width: 200px;
+  height: 200px;
+  color: white;
+  background-color: red;
+  /*-moz-border-radius: 175px;
+  -webkit-border-radius: 175px;
+  border-radius: 175px;*/
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  transition: all 2s;
+  opacity: 0;
+  text-align: center;
+  padding: 40px 10px 10px 10px;
+  pointer-events: none;
+}
+
+.left-outer:hover .left-circle1,
+.left-outer:focus .left-circle1 {
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+.left-outer:hover .left-circle2,
+.left-outer:focus .left-circle2 {
+  transform: translateX(25%) translateY(-45%) scale(1.5);
+  /*transform: scale(1.5);*/
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}
+
+/* Right Circle*/
+
+/*.right-outer {
+  /*border: 1px solid black;
+  display: inline-block;
+  float: right;
+}
+
+.right-circle1 {
+  /*position: absolute;
+  width: 150px;
+  height: 150px;
+  border: 2px solid red;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 75px;
+  transition: all 2s;
+  text-align: center;
+  line-height: 150px;
+  font-size: 25px;
+}
+
+.right-circle2 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  right: 5%;
+  background-color: #cc99ff;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 150px;
+  transition: all 2s;
+  opacity: 0;
+  font-size: 12px;
+  text-align: center;
+  padding: 20% 5% 5% 5%;
+  pointer-events: none;
+}
+
+.right-outer:hover .right-circle1 {
+  transform: scale(0.5);
+  transform-origin: top right;
+}
+
+.right-outer:hover .right-circle2 {
+  transform: scale(1.5);
+  transform: translateX(-10%) translateY(-45%);
+  opacity: 1;
+  z-index: 1;
+  pointer-events: auto;
+}*/
+
+/*Circle Style*/
+
+.circle-style a,
+.circle-style a:link,
+.circle-style a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+.circle-style a:hover {
+  color:black;
+}
+
+.circle-style a:active {
+  color: #1c1c1c;
+}
+
+/*Contact Circle*/
+.con-style p {
+  font-size: 12px;
+}
+
+.con-style a {
+  font-size: 12px;
+}
+
+/*Portfolio Circle*/
+
+.port-style {
+  padding-top: 65px;
+}
+
+ul.legal-tabs li a {
+  font-size: 16px;
+  color: white;
+}
+
+ul.legal-tabs li a:link {
+  text-decoration: none !important;
+}
+
+ul.legal-tabs li a:visited {
+  text-decoration: none !important;
+}
+
+ul.legal-tabs li a:hover {
+  color: black !important;
+}
+
+/*Portfolio Tabs/ Pills*/
+
+#tabs {
+  padding: 3%;
+}
+
+.nav li a {
+  color: red;
+}
+
+.nav-pills > li > a:hover {
+  color: #f76565;
+  background-color: #3d3d3d;
+}
+
+.nav-pills > li.active > a,
+.nav-pills > li.active > a:hover,
+.nav-pills > li.active > a:focus {
+  color: red;
+  background-color: black;
+}
+
+/*Testimonial Circle*/
+.testi-circle {
+  pointer-events: none;
+}
+
+/*Testimonials Modal*/
+
+.quotes p {
+  font-size: 15px;
+}
+
+.quotes h5 {
+  font-size: 14px;
+}
+
+.quotes h6 {
+  font-size: 11px;
+}
+
+.quotes p {
+  font-style: italic;
+}
+
+.quotes a {
+  font-size: 20px;
+}
+
+.right-titles {
+  text-align: right;
+}
+
+#testimonials .modal-body {
+  max-height: 450px;
+  overflow-y: scroll;
+}
+
+/*Article Circle*/
+.art-style {
+  margin-top: 20px;
+}
+
+/*Modal*/
+
+.modal-content {
+}
+
+/*Success Circle*/
+
+.succ-circle {
+  padding: 25px 15px 0 0px;
+}
+
+.succ-circle ul li {
+  font-size: 8px;
+  text-align: left;
+}
+/*CV*/
+.cv {
+  width: 100%;
+  padding-bottom: 90px;
+  margin: 0 auto;
+}
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.container iframe {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+/*CV2*/
+
+.center-block-horiz {
+   margin-left: auto !important;
+   margin-right: auto !important;
+ }
+.set-margin-cicis-menu-to-go {
+  margin: 20px;
+}
+.set-padding-cicis-menu-to-go {
+  padding: 20px;
+}
+.set-border-cicis-menu-to-go {
+   border: 5px inset #4f4f4f;
+}
+set-box-shadow-cicis-menu-to-go {
+  -webkit-box-shadow: 4px 4px 14px #4f4f4f;
+     -moz-box-shadow: 4px 4px 14px #4f4f4f;
+          box-shadow: 4px 4px 14px #4f4f4f;
+}
+
+/*
+** Style the iframe
+** =========================
+*/
+/*
+    css commmon to all iframes
+*/
+.responsive-wrapper {
+  position: relative;
+  height: 0;    /* gets height from padding-bottom */
+  overflow: hidden;
+  /* put following styles (necessary for overflow and
+     scrolling handling) inline in .embed-responsive-element-wrapper around iframe because not stable in CSS
+    -webkit-overflow-scrolling: touch;
+                      overflow: auto; */
+}
+.responsive-wrapper img,
+.responsive-wrapper object,
+.responsive-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  border-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+    css particular to this iframe
+*/
+
+#Iframe-Cicis-Menu-To-Go {
+  margin-top: 90px;
+  max-width: 666.67px;
+  max-height: 600px;
+  overflow: hidden;
+}
+/*
+   padding-bottom = h/w as %
+*/
+.responsive-wrapper-padding-bottom-90pct {
+  padding-bottom: 100%;
+}
+
+/*Footer*/
+
+.footer {
+  position: relative;
+  /*margin-top: -350px; /* negative value of footer height */
+  /*height: 350px;*/
+  /*clear:both;*/
+  bottom: 0;
+  padding-top:20px;
+  padding-bottom: 100px;
+  background-color: black;
+  margin-top: 150px;
+  width: 100%;
+}
+
+.foot-row {
+  margin: 60px 0 30px 0;
+  color: #9d9d9d;
+  font-size: 12px;
+}
+
+.foot-row a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.glyphicon {
+  color: #9d9d9d;
+  font-size: 20px;
+}
+
+.foot-logo {
+  text-align: center;
+}
+
+.foot-logo ul {
+  display: inline-block;
+}
+
+.foot-addy {
+  margin-top: 10px;
+}
+
+.foot-addy-content {
+  display: inline-block;
+  position: relative;
+  /*left: 40px;*/
+}
+
+.foot-addy div p {
+  display: inline-block;
+  word-wrap: break-word;
+  vertical-align: middle;
+  position: relative;
+  left: 20px;
+}
+
+.p-addy {
+  width: 295px;
+}
+
+.foot-about {
+  display: inline-block;
+}
+
+.foot-icons {
+  /*text-align: center;*/
+}
+
+.foot-icons i {
+  margin-right: 15px;
+  color: red;
+}
+
+/*Media Queries*/
+
+@media screen and (max-width:1080px) {
+  .foot-icons {
+    text-align: center;
+  }
+  .foot-icons i {
+    margin-right: 15px;
+    text-align: center;
+    color: red;
+  }
+  .p-addy {
+    width: 250px;
+  }
+  .foot-addy-content {
+    width: 300px;
+    display: block;
+    margin: 0 auto;
+  }
+  .foot-addy {
+    margin-top: 30px;
+  }
+  .foot-about {
+    display: block;
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width:340px) {
+  .p-addy {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:980px) {
+  .left-circle1 {
+    margin-top: 40px;
+  }
+  .circles {
+    padding-left: 300px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .circles {
+    padding-left: 250px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .circles {
+    padding-left: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .circles {
+    padding-left: 75px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .circles {
+    padding-left: 50px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .circles {
+    padding-left: 20px;
+  }
+}
+
+@media screen and (min-height: 1224px) {
+  .footer {
+    margin-top: 500px;
+  }
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Thank You</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicons/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="theme-color" content="#ffffff">
+  <meta HTTP-EQUIV="Content-type" charset="utf-8">
+  <meta name="keywords" content="Maykit, Project, Manager, Management, Salesforce">
+  <meta name="description" content="At MAYKIT Limited we provide simple project
+                                    management solutions to complex environments.">
+  <meta http-equiv="Refresh" content="3;url=/">
+  <!-- For mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/css/bootstrapValidator.min.css"/>
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.3/js/bootstrapValidator.min.js"></script>
+  <!--Javascripts-->
+  <script src="scripts.js"></script>
+  <!--CSS-->
+  <link rel="stylesheet" href="index_v2.css" type="text/css">
+  <!--Font Awesome-->
+  <script src="https://use.fontawesome.com/8163cc0f9e.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <!-- LinkedIn-->
+  <script src="https://platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
+  <script type="IN/FollowCompany" data-id="11161768" data-counter="top"></script>
+  <?php include 'feedback.php'; ?>
+  <!--Google Analytics -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-43176655-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body>
+
+<!--Navbar-->
+<nav class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a id="logo" class="navbar-brand" href="/">MAYK<span>IT</span>.</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+       <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Home</a></li>
+        <li><a href="#feedback" data-toggle="modal" class="feedback">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-content">
+  <div id="thanks" class="container">
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="alert alert-success text-center">
+          <h1>Thanks for your feedback!</h1>
+          <p>This page should redirect back home shortly, if not <a href="/" class="alert-link">click here</a></p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</div>
+
+<!--Feedback Modal-->
+<div id="feedback" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">I'd love to hear from you!</h4>
+      </div>
+      <div class="modal-body">
+        <form id="feedbackForm" method="post" action="feedback.php">
+          <div class="form-group">
+            <input type="text" name="name" class="form-control" placeholder="Enter name">
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" name="comment" rows="8" cols="40" placeholder="Let me know what you think..."></textarea>
+          </div>
+          <!-- #messages is where the messages are placed inside -->
+          <div class="form-group">
+              <div class="col-md-9 col-md-offset-3">
+                  <div id="messages"></div>
+              </div>
+          </div>
+          <button class="btn btn-info btn-block" type="submit" name="submit_button">Submit</button>
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Footer-->
+<div id="footer" class="footer">
+  <div class="container-fluid">
+    <div class="row foot-row">
+      <div class="col-md-4 foot-logo">
+        <p id="logo" style="font-size:28px">MAYK<span>IT</span>.</p>
+        <p><span><a href="/">Home</a></span> - <span><a href="#feedback" data-toggle="modal" class="feedback">Feedback</a></span></p>
+        <p>Maykit <small>&copy;</small> 2017</p>
+      </div>
+      <div class="col-md-4 foot-addy">
+        <div class="foot-addy-content">
+          <div><span class="glyphicon glyphicon-globe"></span><p class="p-addy">SJD Accountancy, KD Tower, Cotterells, Hemel Hempstead, Hertfordshire, HP1 1FW</p></div>
+          <div><span class="glyphicon glyphicon-phone"></span><p>+44 7590 640 841</p></div>
+          <div><span class="glyphicon glyphicon-envelope"></span><p>helen@maykit.co</p></div>
+        </div>
+      </div>
+      <div class="col-md-4 foot-about">
+        <p>About Us</p>
+        <p>
+          Maykit Ltd is a registered company in England and Wales under the company number 10139062.
+        </p>
+        <div class="foot-icons">
+          <a href="https://twitter.com/hels_wills" target="_blank"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a>
+          <a href="https://www.linkedin.com/company-beta/11161768/" target="_blank"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+</html>
